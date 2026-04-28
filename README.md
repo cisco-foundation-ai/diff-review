@@ -14,7 +14,13 @@ Generate categorized HTML diff viewers for GitHub PRs with intelligent grouping 
 ## Installation
 
 ```bash
-uv pip install pr-diff-review
+# From GitHub
+uv pip install git+https://github.com/cisco-foundation-ai/diff-review.git
+
+# Or clone and install locally
+git clone https://github.com/cisco-foundation-ai/diff-review.git
+cd diff-review
+uv pip install -e .
 ```
 
 ## Usage

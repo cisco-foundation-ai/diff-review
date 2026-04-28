@@ -28,7 +28,7 @@
 ### Option 1: Install from Git
 
 ```bash
-uv pip install git+https://github.com/yourusername/diff-review.git
+uv pip install git+https://github.com/cisco-foundation-ai/diff-review.git
 ```
 
 ### Option 2: Install Locally for Development

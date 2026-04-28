@@ -42,9 +42,9 @@ dev = [
 pr-diff-review = "pr_diff_review.cli.main:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/diff-review"
-Repository = "https://github.com/yourusername/diff-review"
-Issues = "https://github.com/yourusername/diff-review/issues"
+Homepage = "https://github.com/cisco-foundation-ai/diff-review"
+Repository = "https://github.com/cisco-foundation-ai/diff-review"
+Issues = "https://github.com/cisco-foundation-ai/diff-review/issues"
 
 [build-system]
 requires = ["hatchling"]

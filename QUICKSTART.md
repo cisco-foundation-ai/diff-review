@@ -10,13 +10,13 @@ Get up and running with `pr-diff-review` in under 2 minutes.
 ## Installation
 
 ```bash
-uv pip install pr-diff-review
+uv pip install git+https://github.com/cisco-foundation-ai/diff-review.git
 ```
 
 Or for local development:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/cisco-foundation-ai/diff-review.git
 cd diff-review
 uv pip install -e .
 ```
