@@ -1,0 +1,130 @@
+/* Prism.js syntax highlighting overrides for GitHub-style diffs */
+/* Separate color schemes for dark and light modes */
+
+/* Dark mode - GitHub dark theme colors */
+
+/* Comments, metadata */
+.line-content .token.comment,
+.line-content .token.prolog,
+.line-content .token.doctype,
+.line-content .token.cdata {
+    color: #8b949e !important;
+}
+
+/* Keywords, operators, booleans */
+.line-content .token.keyword,
+.line-content .token.operator,
+.line-content .token.boolean {
+    color: #ff7b72 !important;
+    font-weight: 600 !important;
+}
+
+/* Strings, attribute values */
+.line-content .token.string,
+.line-content .token.attr-value {
+    color: #a5d6ff !important;
+}
+
+/* Functions, class names */
+.line-content .token.function,
+.line-content .token.class-name {
+    color: #d2a8ff !important;
+}
+
+/* Numbers, constants */
+.line-content .token.number,
+.line-content .token.constant {
+    color: #79c0ff !important;
+}
+
+/* Properties, tags, selectors */
+.line-content .token.property,
+.line-content .token.tag,
+.line-content .token.selector {
+    color: #7ee787 !important;
+}
+
+/* Attribute names */
+.line-content .token.attr-name {
+    color: #ff7b72 !important;
+}
+
+/* Punctuation */
+.line-content .token.punctuation {
+    color: #c9d1d9 !important;
+}
+
+/* Light mode - GitHub light theme colors (darker, higher contrast) */
+
+/* Comments, metadata */
+body.light-mode .line-content .token.comment,
+body.light-mode .line-content .token.prolog,
+body.light-mode .line-content .token.doctype,
+body.light-mode .line-content .token.cdata {
+    color: #57606a !important;
+    font-style: italic;
+}
+
+/* Keywords, operators, booleans */
+body.light-mode .line-content .token.keyword,
+body.light-mode .line-content .token.operator,
+body.light-mode .line-content .token.boolean {
+    color: #cf222e !important;
+    font-weight: 600 !important;
+}
+
+/* Strings, attribute values */
+body.light-mode .line-content .token.string,
+body.light-mode .line-content .token.attr-value {
+    color: #005cc5 !important;
+    font-weight: 600 !important;
+}
+
+/* Functions, class names */
+body.light-mode .line-content .token.function,
+body.light-mode .line-content .token.class-name {
+    color: #8250df !important;
+}
+
+/* Numbers, constants */
+body.light-mode .line-content .token.number,
+body.light-mode .line-content .token.constant {
+    color: #0550ae !important;
+}
+
+/* Properties, tags, selectors, YAML keys */
+body.light-mode .line-content .token.property,
+body.light-mode .line-content .token.tag,
+body.light-mode .line-content .token.selector,
+body.light-mode .line-content .token.key {
+    color: #6f42c1 !important;
+    font-weight: 600 !important;
+}
+
+/* Attribute names */
+body.light-mode .line-content .token.attr-name {
+    color: #6f42c1 !important;
+    font-weight: 600 !important;
+}
+
+/* Punctuation */
+body.light-mode .line-content .token.punctuation {
+    color: #24292f !important;
+}
+
+/* Catch-all: ensure no light pink/red colors in light mode */
+body.light-mode .line-content .token {
+    /* Override any remaining dark-mode colors that slip through */
+}
+
+/* Atext key in YAML (sometimes classified differently) */
+body.light-mode .line-content .token.atrule,
+body.light-mode .line-content .token.important {
+    color: #6f42c1 !important;
+    font-weight: 600 !important;
+}
+
+/* Ensure syntax highlighting doesn't interfere with inline diff marks */
+.line-content mark .token {
+    background: transparent !important;
+}
